@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment variables - never push API keys to GitHub
+.env
+
+# SQLite database file
+*.db
+
+# macOS system file
+.DS_Store
+
+# Node / Next.js
+node_modules/
+.next/
