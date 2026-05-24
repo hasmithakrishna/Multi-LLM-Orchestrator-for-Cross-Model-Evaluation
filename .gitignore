@@ -11,6 +11,9 @@ venv/
 # SQLite database file
 *.db
 
+# Claude Code internal files
+.claude/
+
 # macOS system file
 .DS_Store
 
