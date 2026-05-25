@@ -1,9 +1,10 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
 from core.database import init_db
-
-load_dotenv()
+from routers import chat
 
 app = FastAPI(title="Multi-LLM Orchestrator")
 
@@ -15,6 +16,9 @@ app.add_middleware(
 )
 
 init_db()
+
+app.include_router(chat.router)
+
 
 @app.get("/health")
 def health():
