@@ -7,8 +7,8 @@ from core.database import (
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-LLM_NAME = "llama"
-MODEL = "llama-3.3-70b-versatile"
+LLM_NAME = "gpt"
+MODEL = "openai/gpt-oss-120b"
 SYSTEM_PROMPT = "You are a helpful assistant. Answer clearly and concisely."
 RECENT_LIMIT = 10
 
